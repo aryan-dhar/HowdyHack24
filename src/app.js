@@ -17,3 +17,5 @@ app.use('/api/comments', commentRoutes);
 
 const port = 3000;
 app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
+
+app.use(express.static('publicFolder'));
