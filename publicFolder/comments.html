@@ -13,20 +13,43 @@
     </header>
 
     <main>
-        <div id="postDetails">
-            <!-- Post details will be shown here -->
-        </div>
+        <!-- Post Details -->
+        <section class="post-section">
+            <h2>Post Details</h2>
+            <div class="post">
+                <div class="post-meta">
+                    <span class="author">Anonymous</span>
+                    <span class="date">Posted on: [Date and Time]</span>
+                </div>
+                <div class="post-content" id="postDetails">
+                    <!-- Post content will be shown here -->
+                </div>
+            </div>
+        </section>
 
-        <h2>Comments</h2>
-        <div id="comments">
-            <!-- Comments will be loaded here -->
-        </div>
+        <!-- Comments Section -->
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <div id="comments">
+                <!-- Comments will be loaded here -->
+                <div class="comment">
+                    <div class="comment-meta">
+                        <span class="author">Anonymous</span>
+                        <span class="date">Commented on: [Date and Time]</span>
+                    </div>
+                    <div class="comment-content">
+                        <!-- Comment content here -->
+                    </div>
+                </div>
+            </div>
 
-        <form id="commentForm">
-            <label for="commentMessage">Add a Comment:</label>
-            <textarea id="commentMessage" name="commentMessage" rows="3" required></textarea>
-            <button type="submit">Submit Comment</button>
-        </form>
+            <!-- Add Comment Form -->
+            <form id="commentForm">
+                <label for="commentMessage">Add a Comment:</label>
+                <textarea id="commentMessage" name="commentMessage" rows="3" required></textarea>
+                <button type="submit">Submit Comment</button>
+            </form>
+        </section>
     </main>
 
     <script src="js/main.js"></script>

@@ -8,29 +8,55 @@
 </head>
 <body>
     <header>
-        <h1>HowdyHack24 Project</h1>
-        <a href="post.html">Create New Post</a>
+        <h1>HowdyHelp</h1>
+        <p id="team-members">Created by: Aryan Dharangaonkar, Prasit Manjunath, Preetham Vengatesan</p>
     </header>
 
     <main>
-        <section>
+        <section class="intro">
             <h2>This is our entry for HowdyHack24</h2>
             <p>
-                Here you can find a supportive peer forum focused on mental health. 
-                Our platform aims to provide a safe space for discussions and sharing resources.
+            Welcome to our Mental Health Peer Support Forum, a platform dedicated to providing a safe and supportive space for individuals to discuss mental health topics. Our website is built with the aim of promoting openness and understanding through anonymous peer-to-peer interactions. Here, users can create posts, share their stories, and provide support to others through comments. 
+            <br><br>
+            The website offers:
+            <ul>
+                <li>Anonymized peer support through forum-style discussions.</li>
+                <li>Dedicated pages with resources for mental health issues, including depression and suicide hotlines.</li>
+                <li>A safe space to share personal experiences without judgment.</li>
+            </ul>
+            We used several technologies to bring this project to life, including:
+            <ul>
+                <li>HTML & CSS for structuring and styling the webpage.</li>
+                <li>JavaScript for dynamic content and interactions.</li>
+                <li>Node.js for backend development and managing server-side operations.</li>
+                <li>Express.js to handle routing and APIs.</li>
+                <li>MongoDB for storing and retrieving posts and comments in a database.</li>
+            </ul>
             </p>
-            <img src="" alt="" style="max-width: 100%; height: auto;">
         </section>
         
-        <button onclick="location.href='forum.html'" style="padding: 15px 30px; font-size: 1.2em; margin-top: 20px;">
-            Click here to view the project
+        <!-- Button to go to the Resources Page -->
+        <button onclick="location.href='resources.html'" class="cta-button">
+            View Mental Health Resources
         </button>
 
-        <h2>All Posts</h2>
-        <div id="posts">
-            <!-- Posts will be loaded here -->
-        </div>
+        <!-- Button to Create a New Post -->
+        <button onclick="location.href='post.html'" class="create-post-button">
+            Create New Post
+        </button>
+
+        <!-- Posts Section -->
+        <section class="posts-section">
+            <h2>All Posts</h2>
+            <div id="posts">
+                <!-- Posts will be loaded here -->
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 HowdyHack24 Team. All rights reserved.</p>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
