@@ -1,7 +1,7 @@
 /* General styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f8ff;
+    background-color: #e9f1f5; /* Light blue background */
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #3b5998;
+    background-color: #4A90E2; /* Bright blue */
     color: white;
     padding: 20px;
     text-align: center;
@@ -25,7 +25,7 @@ header h1 {
 #team-members {
     margin-top: 10px;
     font-size: 1.2em;
-    color: #e0e0e0;
+    color: #f0f0f0; /* Light gray */
 }
 
 /* Main section styles */
@@ -42,6 +42,7 @@ main {
 .intro h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #2C3E50; /* Dark blue */
 }
 
 .intro p {
@@ -50,6 +51,7 @@ main {
     line-height: 1.6;
 }
 
+/* Enhanced intro image style */
 .intro-image {
     max-width: 100%;
     height: auto;
@@ -60,35 +62,37 @@ main {
 /* Call-to-action button styles */
 .cta-button {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 15px 40px;
-    background-color: #f39c12;
+    background-color: #f39c12; /* Orange */
     color: white;
     font-size: 1.5em;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #e67e22;
+    background-color: #e67e22; /* Darker orange */
 }
 
 .create-post-button {
     display: block;
     margin: 20px auto;
     padding: 15px 30px;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Green */
     color: white;
     font-size: 1.2em;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .create-post-button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Darker green */
 }
 
 /* Posts section styles */
@@ -99,7 +103,7 @@ main {
 .posts-section h2 {
     text-align: center;
     font-size: 2em;
-    color: #2c3e50;
+    color: #2c3e50; /* Dark blue */
     margin-bottom: 30px;
 }
 
@@ -112,7 +116,7 @@ main {
 }
 
 #posts div {
-    background-color: white;
+    background-color: #ffffff; /* White */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -121,6 +125,13 @@ main {
     min-width: 280px;
     margin-bottom: 20px;
     position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 5px solid #3498db; /* Blue border on the left */
+}
+
+#posts div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 #posts div::before {
@@ -137,7 +148,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f0f9ff;
+    background-color: #f0f9ff; /* Light blue */
     border-radius: 8px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
@@ -145,18 +156,24 @@ main {
 
 h2 {
     font-size: 1.6em;
-    color: #005580;
+    color: #005580; /* Darker blue */
     border-bottom: 2px solid #005580;
     padding-bottom: 10px;
 }
 
+/* Enhanced post and comment styles */
 .post, .comment {
-    background-color: #ffffff;
+    background-color: #ffffff; /* White */
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+.post:hover, .comment:hover {
+    background-color: #f9f9f9; /* Light gray */
 }
 
 .post-meta, .comment-meta {
@@ -187,7 +204,7 @@ h2 {
 }
 
 #commentForm button {
-    background-color: #005580;
+    background-color: #005580; /* Blue */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -197,9 +214,8 @@ h2 {
 }
 
 #commentForm button:hover {
-    background-color: #004466;
+    background-color: #004466; /* Darker blue */
 }
-
 
 /* Footer styles */
 footer {
