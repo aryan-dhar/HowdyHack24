@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const postSchema = new mongoose.Schema({
   message: { type: String, required: true },
-  category: { type: String, enum: ['Anxiety', 'Depression', 'Stress', 'Other'], default: 'Other' },
+  category: { type: String, enum: ['anxiety', 'depression', 'stress', 'other'], default: 'other' },
   timestamp: { type: Date, default: Date.now },
 });
 
